@@ -16,13 +16,18 @@ html {
   background: black;
   scroll-snap-type: y proximity;
   scroll-behavior: smooth;
+  height: var(--PageHeight);
+  width: var(--PageWidth);
 }
 
-html,
-body,
+body {
+  height: var(--PageHeight);
+  width: var(--PageWidth);
+}
+
 main {
-  height: 100%;
-  width: 100%;
+  height: var(--PageHeight);
+  width: var(--PageWidth);
 }
 
 section {
