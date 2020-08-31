@@ -1,21 +1,19 @@
-var $tele = $("#television");
-var $autoplay = $("#hover-video");
+let tele = document.querySelector("#television");
+let autoplay = document.querySelector("#hover-video");
 
-$tele.on("mouseenter", function () {
-  $autoplay.get(0).play();
+let audio = document.querySelector("#old-radio");
+let autoplayRadio = document.querySelector("#celestino");
+
+tele.addEventListener("mouseenter", () => {
+  autoplay.play();
+});
+tele.addEventListener("mouseout", () => {
+  autoplay.pause();
 });
 
-$tele.on("mouseout", function () {
-  $autoplay.get(0).pause();
+audio.addEventListener("mouseenter", () => {
+  autoplayRadio.play();
 });
-
-var $audio = $("#old-radio");
-var $autoplayradio = $("#celestino");
-
-$audio.on("mouseenter", function () {
-  $autoplayradio.get(0).play();
-});
-
-$audio.on("mouseout", function () {
-  $autoplayradio.get(0).pause();
+audio.addEventListener("mouseout", () => {
+  autoplayRadio.pause();
 });
