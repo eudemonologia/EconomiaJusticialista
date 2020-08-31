@@ -161,7 +161,7 @@ nav li {
 /* Portada*/
 
 #inicio {
-  background-image: url(Images/isabel.jpg);
+  background-image: url(../Images/isabel.jpg);
   background-size: cover;
   background-position: center bottom;
   background-color: rgb(0, 0, 0, 0.5);
@@ -205,7 +205,7 @@ nav li {
 }
 
 .hojas article {
-  background-image: url(Images/papel.jpg);
+  background-image: url(../Images/papel.jpg);
   padding: 30px 40px;
   width: 550px;
   min-width: 550px;
