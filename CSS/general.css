@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  list-style: none;
+  text-decoration: none;
+}
+
+::selection {
+  background-color: yellow;
+  color: black;
+}
+
+html {
+  background: black;
+  scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+main {
+  height: 100%;
+  width: 100%;
+}
+
+section {
+  display: flex;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 200px 20px 20px 20px;
+  scroll-snap-align: center;
+}
+
+section > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+}
+
+h2,
+h3 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 6em;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.8em;
+}
+
+h4 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+p {
+  font-family: "Roboto Mono", monospace;
+  text-indent: 2em;
+  text-align: justify;
+}
+
+em,
+strong {
+  background-color: yellow;
+  font-style: normal;
+}
+
+strong {
+  font-weight: 500;
+}
